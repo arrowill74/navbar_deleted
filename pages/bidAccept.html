@@ -1,0 +1,114 @@
+<html>
+
+<head>
+    <title>SRD - 我要撕單</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row bidAccept">
+            <div class="col-xs-10 col-xs-offset-1">
+                <form action="/" method="post">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            我要撕單
+                        </div>
+                        <div class="panel-body">
+                            <div class="form-group">
+                                <img src="../img/item/camera.jpg" alt="物品" class="img-responsive">
+                                <p>物品名稱：<span>Canon XD</span></p>
+                                <p>懸賞人ID：<span>103306000</span></p>
+                                <p>出價金額：<span>2000</span></p>
+                                <p>需求時間：</p>
+                                <div class="date">
+                                    <table>
+                                        <tr>
+                                            <th>
+                                                <button type="button" onclick="changemonth(-1)">
+                                                    <</button>
+                                            </th>
+                                            <th colspan="5" id="titleyearmonth"></th>
+                                            <th>
+                                                <button type="button" onclick="changemonth(1)">></button>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <td>日</td>
+                                            <td>一</td>
+                                            <td>二</td>
+                                            <td>三</td>
+                                            <td>四</td>
+                                            <td>五</td>
+                                            <td>六</td>
+                                        </tr>
+                                        <tr>
+                                            <td onclick="selectFunction(this)" id="x0y0"></td>
+                                            <td onclick="selectFunction(this)" id="x1y0"></td>
+                                            <td onclick="selectFunction(this)" id="x2y0"></td>
+                                            <td onclick="selectFunction(this)" id="x3y0"></td>
+                                            <td onclick="selectFunction(this)" id="x4y0"></td>
+                                            <td onclick="selectFunction(this)" id="x5y0"></td>
+                                            <td onclick="selectFunction(this)" id="x6y0"></td>
+                                        </tr>
+                                        <tr>
+                                            <td onclick="selectFunction(this)" id="x0y1"></td>
+                                            <td onclick="selectFunction(this)" id="x1y1"></td>
+                                            <td onclick="selectFunction(this)" id="x2y1"></td>
+                                            <td onclick="selectFunction(this)" id="x3y1"></td>
+                                            <td onclick="selectFunction(this)" id="x4y1"></td>
+                                            <td onclick="selectFunction(this)" id="x5y1"></td>
+                                            <td onclick="selectFunction(this)" id="x6y1"></td>
+                                        </tr>
+                                        <tr>
+                                            <td onclick="selectFunction(this)" id="x0y2"></td>
+                                            <td onclick="selectFunction(this)" id="x1y2"></td>
+                                            <td onclick="selectFunction(this)" id="x2y2"></td>
+                                            <td onclick="selectFunction(this)" id="x3y2"></td>
+                                            <td onclick="selectFunction(this)" id="x4y2"></td>
+                                            <td onclick="selectFunction(this)" id="x5y2"></td>
+                                            <td onclick="selectFunction(this)" id="x6y2"></td>
+                                        </tr>
+                                        <tr>
+                                            <td onclick="selectFunction(this)" id="x0y3"></td>
+                                            <td onclick="selectFunction(this)" id="x1y3"></td>
+                                            <td onclick="selectFunction(this)" id="x2y3"></td>
+                                            <td onclick="selectFunction(this)" id="x3y3"></td>
+                                            <td onclick="selectFunction(this)" id="x4y3"></td>
+                                            <td onclick="selectFunction(this)" id="x5y3"></td>
+                                            <td onclick="selectFunction(this)" id="x6y3"></td>
+                                        </tr>
+                                        <tr>
+                                            <td onclick="selectFunction(this)" id="x0y4"></td>
+                                            <td onclick="selectFunction(this)" id="x1y4"></td>
+                                            <td onclick="selectFunction(this)" id="x2y4"></td>
+                                            <td onclick="selectFunction(this)" id="x3y4"></td>
+                                            <td onclick="selectFunction(this)" id="x4y4"></td>
+                                            <td onclick="selectFunction(this)" id="x5y4"></td>
+                                            <td onclick="selectFunction(this)" id="x6y4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td onclick="selectFunction(this)" id="x0y5"></td>
+                                            <td onclick="selectFunction(this)" id="x1y5"></td>
+                                            <td onclick="selectFunction(this)" id="x2y5"></td>
+                                            <td onclick="selectFunction(this)" id="x3y5"></td>
+                                            <td onclick="selectFunction(this)" id="x4y5"></td>
+                                            <td onclick="selectFunction(this)" id="x5y5"></td>
+                                            <td onclick="selectFunction(this)" id="x6y5"></td>
+                                        </tr>
+                                    </table>
+                                    <input type="hidden" id="monthnow">
+                                </div>
+                                <br>
+                                <p>備註：<span>XXXXXXXXXXXXXXXX</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-sm btn-block">確認撕單</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../js/calender.js"></script>
+</body>
+
+</html>

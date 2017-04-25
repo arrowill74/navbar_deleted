@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>SRD - 設定</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row setting">
+            <div class="col-xs-10 col-xs-offset-1">
+                <form action="/" method="post">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            更改密碼
+                        </div>
+                        <div class="panel-body">
+                            <div class="form-group">
+                                <label>原有密碼</label>
+                                <input id="oldpassword" class="form-control" placeholder="請輸入舊密碼" required="required">
+                                <label>輸入新密碼</label>
+                                <input id="newpassword" class="form-control" placeholder="請輸入新密碼" required="required">
+                                <br>
+                                <input id="newpassword" class="form-control" placeholder="請再次輸入密碼" required="required">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            更改手機號碼
+                        </div>
+                        <div class="panel-body">
+                            <div class="form-group">
+                                <input id="cellphone" class="form-control" placeholder="請輸入新手機號碼" required="required">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            更改大頭貼
+                        </div>
+                        <div class="panel-body">
+                            <div class="form-group">
+                                <label>上傳新大頭貼</label>
+                                <input type="file">
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-sm btn-block">提交</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

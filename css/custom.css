@@ -1,0 +1,297 @@
+body {
+    padding-top: 50px;
+}
+
+.text-content {
+    padding: 30px;
+}
+
+.text-content>p {
+    text-align: left;
+}
+
+#accordion .panel-title,
+#accordion-borrow .panel-title,
+#accordion-rent .panel-title {
+    margin: 0px 15px;
+    text-align: left;
+}
+
+.btn-orange {
+    color: #fff;
+    background-color: rgb(246, 137, 0);
+    border-color: rgb(226, 125, 47);
+}
+
+
+/*item tabs*/
+
+.tabs {
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+
+.tabs ul {
+    list-style: none;
+    background-color: rgb(108, 189, 226);
+}
+
+.tabs ul li {
+    display: inline-block;
+}
+
+.tabs li.active > a,
+.tabs li.active > a:hover,
+.tabs li.active > a:focus {
+    color: #FFFFFF;
+    cursor: default;
+    background-color: rgb(30, 66, 85);
+}
+
+.contact-parent {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+.contact {
+    padding: 0px;
+    text-align: center;
+}
+
+.contact>p {
+    font-size: 0.3em;
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.428571429;
+}
+
+#row-hotact {
+    position: relative;
+}
+
+#image {
+    margin-left: 5px;
+    position: relative;
+    width: 10%;
+    float: left;
+}
+
+.container-scroll {
+    position: relative;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 85%;
+    float: right;
+}
+
+.navbar-toggle {
+    position: relative;
+    float: left;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.sidebar-search {
+    padding: 15px;
+}
+
+.sidebar ul li {
+    border-bottom: 1px solid #e7e7e7;
+}
+
+
+/*profile page*/
+
+.profile {
+    margin-top: 10px;
+}
+
+.profile p {
+    text-align: center;
+    margin: 0px;
+}
+
+.profile img {
+    background-color: white;
+    padding: 5px;
+    box-shadow: 1px 1px gray;
+    border-radius: 200px;
+}
+
+.profile .name {
+    margin-bottom: 3px;
+    font-size: 2em;
+}
+
+.profile-link:hover {
+    background-color: rgb(30, 66, 85);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.product-row {
+    text-align: center;
+    margin: 10px auto;
+}
+
+.product-row img {
+    background-color: white;
+    padding: 5px;
+    box-shadow: 1px 1px gray;
+}
+
+.product-row .name {
+    margin: 3px 0px;
+    font-size: 1em;
+}
+
+.header {
+    background: #f0f0f0;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.catalog-scroll {
+    position: relative;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    float: right;
+}
+
+.frame {
+    margin: 5px 5px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(202, 229, 235);
+    box-shadow: 3px 3px rgb(142, 201, 234);
+    cursor: pointer;
+}
+
+.leftalign {
+    text-align: left;
+}
+
+
+/*share page*/
+
+.top-spacing {
+    margin-top: 60px;
+}
+
+.content {
+    padding: 3px
+}
+
+.content .col-xs-12 {
+    padding: 3px;
+}
+
+#text {
+    padding: 0px;
+}
+
+#text p {
+    line-height: 1;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.location,
+.id {
+    font-size: 0.8em;
+}
+
+.money {
+    color: red;
+    font-size: 1.5em;
+}
+
+.star {
+    color: black;
+    padding-right: 20px;
+    text-align: right;
+    font-size: 0.5em;
+}
+
+.stamp {
+    margin-top: 10px;
+    margin-right: 20px;
+    padding: 0px;
+}
+
+.stamp .col-xs-6 {
+    padding: 0px;
+}
+
+
+/*wanted page*/
+
+.wanted,
+.comment {
+    padding: 10px;
+}
+
+.wanted .col-xs-6 {
+    padding: 3px;
+}
+
+.wanted p,
+.wanted span {
+    text-align: center;
+    color: black;
+}
+
+.wanted .countdown,
+.wanted .success,
+.wanted .fail {
+    color: red;
+    font-size: 1.5em;
+}
+
+
+}
+.bid img,
+.item img,
+.wanted img {
+    margin: 5px auto;
+    background-color: white;
+    padding: 5px;
+    box-shadow: 1px 1px gray;
+}
+
+/*goodsNew page*/
+.goodsnew,
+.wantednew,
+.setting,
+.bidNew,
+.bidAccept {
+    text-align: center;
+    margin-top: 20px;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SRD - 競標</title>
+</head>
+
+<body>
+    <div class="container bid">
+        <div class="row">
+            <div class="col-xs-5">
+                <img src="../img/item/camera.jpg" alt="物品" class="img-responsive">
+            </div>
+            <div class="col-xs-7">
+                <h3>Name</h3>
+                <button onclick="location.href='./bidNew.html'" type="button" class="btn btn-outline btn-primary btn-lg">我要競標</button>
+            </div>
+        </div>
+        <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>願付金額</th>
+                    <th>截止時間</th>
+                    <th>懸賞期間</th>
+                    <th>撕單</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="odd">
+                    <td>103306000</td>
+                    <td>1500</td>
+                    <td>00:00:00</td>
+                    <td class="center">4</td>
+                    <td align="center">
+                        <button onclick="location.href='./bidAccept.html'" type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal">我要撕單</button>
+                    </td>
+                </tr>
+                <tr class="even">
+                    <td>103306000</td>
+                    <td>2000</td>
+                    <td>00:00:00</td>
+                    <td class="center">5</td>
+                    <td align="center">
+                        <button onclick="location.href='./bidAccept.html'" type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal">我要撕單</button>
+                    </td>
+                </tr>
+                <tr class="odd">
+                    <td>103306000</td>
+                    <td>2500</td>
+                    <td>00:00:00</td>
+                    <td class="center">5.5</td>
+                    <td align="center">
+                        <button onclick="location.href='./bidAccept.html'" type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal">我要撕單</button>
+                    </td>
+                </tr>
+                <tr class="even">
+                    <td>103306000</td>
+                    <td>2500</td>
+                    <td>00:00:00</td>
+                    <td class="center">6</td>
+                    <td align="center">
+                        <button onclick="location.href='./bidAccept.html'" type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal">我要撕單</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="../js/calender.js"></script>
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+    <!-- DataTables JavaScript -->
+    <script src="../vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
+    <script src="../vendor/datatables-responsive/dataTables.responsive.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('#dataTables-example').DataTable({
+            responsive: true
+        });
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SRD - 商品</title>
+</head>
+
+<body>
+    <div id="itemCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#itemCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#itemCarousel" data-slide-to="1" class=""></li>
+            <li data-target="#itemCarousel" data-slide-to="2" class=""></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <div class="slider-size">
+                    <img class="first-slide" src="../img/item/camera.jpg" alt="First slide">
+                </div>
+            </div>
+            <div class="item">
+                <div class="slider-size">
+                    <img class="second-slide" src="../img/item/camera.jpg" alt="Second slide">
+                </div>
+            </div>
+            <div class="item">
+                <div class="slider-size">
+                    <img class="third-slide" src="../img/item/camera.jpg" alt="Third slide">
+                </div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#itemCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#itemCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div class="contact-parent">
+        <div class="col-xs-10">
+            <h2><span>Canon XD</span></h2>
+            <h4>$<span>2000</span></h4>
+        </div>
+        <div class="col-xs-2 contact">
+            <button onclick="location.href='./personalPage.html'" type="button" class="btn btn-orange btn-circle"><i class="fa fa-envelope"></i>
+            </button>
+            <p>連絡賣家</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="tabs">
+                <ul class="nav">
+                    <li class="active"><a href="#intro" data-toggle="tab">商品說明</a>
+                    </li>
+                    <li><a href="#comment" data-toggle="tab">商品評價</a>
+                    </li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="intro">
+                        <div class="date">
+                            <h4>目前可用日期</h4>
+                            <table>
+                                <tr>
+                                    <th>
+                                        <button type="button" onclick="changemonth(-1)">
+                                            <</button>
+                                    </th>
+                                    <th colspan="5" id="titleyearmonth"></th>
+                                    <th>
+                                        <button type="button" onclick="changemonth(1)">></button>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>日</td>
+                                    <td>一</td>
+                                    <td>二</td>
+                                    <td>三</td>
+                                    <td>四</td>
+                                    <td>五</td>
+                                    <td>六</td>
+                                </tr>
+                                <tr>
+                                    <td onclick="selectFunction(this)" id="x0y0"></td>
+                                    <td onclick="selectFunction(this)" id="x1y0"></td>
+                                    <td onclick="selectFunction(this)" id="x2y0"></td>
+                                    <td onclick="selectFunction(this)" id="x3y0"></td>
+                                    <td onclick="selectFunction(this)" id="x4y0"></td>
+                                    <td onclick="selectFunction(this)" id="x5y0"></td>
+                                    <td onclick="selectFunction(this)" id="x6y0"></td>
+                                </tr>
+                                <tr>
+                                    <td onclick="selectFunction(this)" id="x0y1"></td>
+                                    <td onclick="selectFunction(this)" id="x1y1"></td>
+                                    <td onclick="selectFunction(this)" id="x2y1"></td>
+                                    <td onclick="selectFunction(this)" id="x3y1"></td>
+                                    <td onclick="selectFunction(this)" id="x4y1"></td>
+                                    <td onclick="selectFunction(this)" id="x5y1"></td>
+                                    <td onclick="selectFunction(this)" id="x6y1"></td>
+                                </tr>
+                                <tr>
+                                    <td onclick="selectFunction(this)" id="x0y2"></td>
+                                    <td onclick="selectFunction(this)" id="x1y2"></td>
+                                    <td onclick="selectFunction(this)" id="x2y2"></td>
+                                    <td onclick="selectFunction(this)" id="x3y2"></td>
+                                    <td onclick="selectFunction(this)" id="x4y2"></td>
+                                    <td onclick="selectFunction(this)" id="x5y2"></td>
+                                    <td onclick="selectFunction(this)" id="x6y2"></td>
+                                </tr>
+                                <tr>
+                                    <td onclick="selectFunction(this)" id="x0y3"></td>
+                                    <td onclick="selectFunction(this)" id="x1y3"></td>
+                                    <td onclick="selectFunction(this)" id="x2y3"></td>
+                                    <td onclick="selectFunction(this)" id="x3y3"></td>
+                                    <td onclick="selectFunction(this)" id="x4y3"></td>
+                                    <td onclick="selectFunction(this)" id="x5y3"></td>
+                                    <td onclick="selectFunction(this)" id="x6y3"></td>
+                                </tr>
+                                <tr>
+                                    <td onclick="selectFunction(this)" id="x0y4"></td>
+                                    <td onclick="selectFunction(this)" id="x1y4"></td>
+                                    <td onclick="selectFunction(this)" id="x2y4"></td>
+                                    <td onclick="selectFunction(this)" id="x3y4"></td>
+                                    <td onclick="selectFunction(this)" id="x4y4"></td>
+                                    <td onclick="selectFunction(this)" id="x5y4"></td>
+                                    <td onclick="selectFunction(this)" id="x6y4"></td>
+                                </tr>
+                                <tr>
+                                    <td onclick="selectFunction(this)" id="x0y5"></td>
+                                    <td onclick="selectFunction(this)" id="x1y5"></td>
+                                    <td onclick="selectFunction(this)" id="x2y5"></td>
+                                    <td onclick="selectFunction(this)" id="x3y5"></td>
+                                    <td onclick="selectFunction(this)" id="x4y5"></td>
+                                    <td onclick="selectFunction(this)" id="x5y5"></td>
+                                    <td onclick="selectFunction(this)" id="x6y5"></td>
+                                </tr>
+                            </table>
+                            <input type="hidden" id="monthnow">
+                        </div>
+                        <div class="text-content">
+                            <h4>商品介紹</h4>
+                            <p>EOS 760D，一部高級入門數位單眼相機，配備中高階機種的機頂LCD面板及速控轉盤、新增Wi-Fi/NFC無線連接及即時顯示模式伺服自動對焦連拍功能，強化操作體驗。配備全新混合式 CMOS 自動對焦III系統 (Hybrid CMOS AF III)，提高即時顯示模式時拍攝相片及短片的對焦速度，令對焦更快更準。EOS 760D 亦配備全新 Canon 2,420 萬像素 APS-C 尺寸 Canon CMOS 影像感測器，配合新一代 DIGIC 6 數位影像處理器，及全新 7,560 像素 RGB+IR 測光感測器，進一步提高影像畫質。加上Full HD EOS Movie短片拍攝及全新 HDR 短片拍攝功能，讓使用者輕易發掘更多攝影樂趣。</p>
+                            <h4>商品特色</h4>
+                            <p>強化自動對焦功能輕易捕捉高速主體 EOS 760D 配備大幅提升對焦速度及準確性的全新混合式CMOS自動對焦III系統(Hybrid CMOS AF III System)，透過在水平方向增加相位檢測自動對焦專用像素的密度，令相機於即時顯示模式時能只利用高速的相位檢測作快速自動對焦1，自動對焦速度是上一代混合式CMOS自動對焦II的4.8倍2；而短片拍攝時亦能增加短片伺服自動對焦的追蹤準確性及流暢度，輕易捕捉移動主體，影像時刻清晰銳利。其中EOS 760D更是首部入門級型號支援即時顯示模式伺服自動對焦連拍功能，能以最高約每秒3張追蹤移動主體，即時顯示拍攝影像，捕捉移動主體更得心應手。 1 根據拍攝條件及所使用鏡頭，反差檢測自動對焦仍有機會應用 2 與EOS 100D比較，並以符合CIPA有關自動對焦時間的標準計算 (根據不同的拍攝條件及所使用鏡頭，結果可能有出入) 此外，EOS 760D配備採用於進階產品的19點全十字型自動對焦系統，中央雙十字對焦點對應f/2.8光圈，對焦快速準確，透過廣泛分佈的19個自動對焦點，即使主體移離構圖中心亦能輕易捕捉，確保清晰拍下高速主體的每個動作及重要時刻；使用者亦可因應拍攝場景選用區域對焦，加強於特定區域下的對焦準確性及構圖靈活性。 EOS 760D配備全新7,560像素RGB+IR測光感測器，支援63區測光，並能檢測畫面中的紅(R)、綠(G)、藍(B)及近紅外線(NIR)數據，令EOS場景檢測系統分析更準確，不論室內或外，日出、日落或利用人工照明拍攝，都能確保準確的白平衡及曝光效果。而首次應用在EOS系統上的全新色調偵測自動對焦技術，利用7,560像素RGB+IR測光感測器偵測膚色，提升拍攝人像時的自動對焦準確性，改善以往慣常選用較近物件作自動對焦的情況。 Top 首度加入Wi-Fi/NFC無線連接 輕鬆遙控拍攝及即時分享影像 為照顧新一代使用者對高畫質影像拍攝及分享的需要，EOS 760D首度加入Wi-Fi/NFC無線連接，讓使用者更快更輕易遙控拍攝及分享影像，全方位享受攝影樂趣。只需透過Camera Connect智慧型手機應用程式連接相機至智慧型手機，即可以智慧型手機遙控拍攝，發掘更多創意角度，不論自拍或合照，或從不同高低角度取景均輕鬆自如，進一步提高拍攝靈活性；使用者可於智慧型手機上即時觀看拍攝畫面，調校相機光圈、快門、ISO值等及即時瀏覽拍攝效果，過程盡在掌握。此功能亦方便使用者於智慧型手機上瀏覽、刪除、儲存相片及短片，並分享至社群網站如Facebook或YouTube；亦可無線連接至支援無線PictBridge (Wireless LAN)技術的印相機作相片列印。 Top 機頂LCD面板、速控轉盤及智能觀景器 體驗進階機種的強大操控性 EOS 760D配備以往常見於進階機種的機頂LCD面板及速控轉盤，為入門相機使用者帶來等同於進階機種的便捷操控感及拍攝優勢。機頂LCD面板方便使用者於拍攝過程中快速查看各種設定資訊如快門、光圈、ISO值及電量等，拍攝時目光更能集中於觀景器上，專注投入捕捉瞬間精彩畫面；而機背的速控轉盤則方便使用者以姆指迅速轉換設定或檢視影像，操控更得心應手。 EOS 760D的光學觀景器提供約95%覆蓋率及0.82倍放大率，新增支援多種長寬比拍攝顯示，讓使用者輕易掌握最終的影像比例及效果。配備「智能觀景器」，能顯示多種資訊包括自動對焦點、自動對焦區域選擇模式、電子水平儀 、格線、長寬比線及閃爍偵測等，於拍攝及構圖上享有更大的靈活性，如EOS 760D內置的電子水平儀，可按拍攝需要選擇於觀景器或LCD螢幕上顯示，為風景、建築物拍攝等提供準確的水平位置。另外，EOS 760D設有多點觸控式多角度3.0吋104萬點Clear View II LCD螢幕，採用向機側外翻的設計，使用腳架時亦方便無阻，並可調校角度，方便自拍或從高、低等不同角度取景，更輕鬆拍攝不同主體；提供優良的防塵防反光表現，即使於猛烈陽光下使用，仍能清晰觀看畫面。此外，亦可於螢幕上點選選單功能或調校設定，更支援輕觸式快門操作，只需輕觸螢幕即可對焦及拍攝，亦可以多點觸控方式縮放影像，或向左右橫撥以檢視前後影像，提供簡易直接的觸控體驗。 Top 全新2,420萬像素CMOS及DIGIC 6數位影像處理器 超乎入門級的卓越影像畫質 EOS 760D配備首見於EOS入門相機的全新2,420萬像素APS-C尺寸Canon CMOS影像感測器，提供極高解像度，結合支援高速14-bit影像處理的DIGIC 6數位影像處理器，大幅降低影像雜訊，呈現更豐富細節、更廣闊的動態範圍、細膩光影層次及重現自然悅目的色彩，不論拍攝自然景色以至人像髮絲、膚質均確保卓越畫質。標準ISO範圍達ISO 100-12800，更可擴展至ISO 25600，足以應付戶外到昏暗環境等不同拍攝場合，不須閃光燈仍能拍攝出色影像，細緻保留現場氣氛。憑藉DIGIC 6的強大影像處理能力，EOS 760D均提供最多每秒約5張高速連續拍攝，並支援靜音連續拍攝，讓使用者能精彩捕捉連串動作。 為進一步提升影像畫質，EOS 760D更加入「防止閃爍拍攝」功能，確保在閃爍光源下拍攝時每張影像均有更一致的曝光及顏色，讓使用者輕鬆於採用人工照明的室內環境進行拍攝。開啟此功能後，測光系統會偵測如光管、水銀燈等閃爍光源的頻率，調節每張影像的快門釋放時間，以配合光源釋出最強亮度時拍攝，從而達到更一致的影像效果。另外，鏡頭像差修正更新增支援大部分EF及EF-S鏡頭的「變形校正功能」，能即時修正鏡頭的變形像差，並可於即時顯示模式預覽效果，確保更佳影像品質。 Top 高畫質EOS Movie及全新HDR短片功能 完美記錄動態氣氛 EOS 760D提供 Full HD (1920 x 1080) EOS Movie短片拍攝，配合強化自動對焦表現及更多先進功能，讓使用者輕鬆拍攝專業短片。受惠於混合式CMOS自動對焦III系統，相機配備的短片伺服自動對焦(Movie Servo AF)功能，於短片拍攝期間能夠快速、準確地對人臉追蹤對焦或觸控LCD螢幕對主體作追蹤對焦；配合Canon STM步進馬達(Stepping Motor)鏡頭，能達到流暢、自然、寧靜的連續自動對焦效果。EOS 760D亦特別增設MP4(輕量)短片壓縮方法，能有效減低短片檔案大小並保持短片畫質，方便使用者於智慧型手機或平板電腦上快速瀏覽短片、透過無線網路傳送或分享至社群網站。 另外，EOS 760D更是首部EOS相機配備全新HDR(高動態範圍)短片拍攝功能3 ，能有效避免拍攝高反差場景時短片出現曝光過度的情況，精彩保留高光部分的細節，例如背光下拍攝，仍能細緻保留天空的雲彩。 3 短片解像度為1280 x 720，實際影片格數為每秒29.97格(NTSC) / 每秒25.00格(PAL) Top 隨機附件 EOS 760D 單機身 - EOS 760D機身 - 電池LP-E17 - 充電器LC-E17E - 電源線 - USB界面連接線 - 相機帶EW-100DB V - EOS DIGITAL Solution Disk (CD-ROM) - 軟體使用手冊 (CD-ROM, PDF) - 相機使用說明書 (CD-ROM, PDF) - 產品保固卡 EOS 760D Kit (連EF-S 18-135mm f/3.5-5.6 IS STM鏡頭) - EOS 760D機身 - EF-S 18-135mm f/3.5-5.6 IS STM鏡頭 - 電池LP-E17 - 充電器LC-E17E - 電源線 - USB界面連接線 - 相機帶EW-100DB V - EOS DIGITAL Solution Disk (CD-ROM) - 軟體使用手冊 (CD-ROM, PDF) - 相機使用說明書 (CD-ROM, PDF) - 產品保固卡 (機身) - 產品保固卡 (鏡頭)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="comment">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <br>
+                                    <div class="panel-group" id="accordion">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                            103306009
+                                            </a>
+                                        </h4>
+                                            </div>
+                                            <div id="collapse1" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    值得推薦的好賣家
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">103306009</a>
+                                        </h4>
+                                            </div>
+                                            <div id="collapse2" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    面交效率高
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">103306009</a>
+                                        </h4>
+                                            </div>
+                                            <div id="collapse3" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    價格實惠
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">103306009</a>
+                                        </h4>
+                                            </div>
+                                            <div id="collapse4" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    值得推薦的好賣家
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">103306009</a>
+                                        </h4>
+                                            </div>
+                                            <div id="collapse5" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    值得推薦的好賣家
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">103306009</a>
+                                        </h4>
+                                            </div>
+                                            <div id="collapse6" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    值得推薦的好賣家
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">103306009</a>
+                                        </h4>
+                                            </div>
+                                            <div id="collapse7" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    值得推薦的好賣家
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">103306009</a>
+                                        </h4>
+                                            </div>
+                                            <div id="collapse8" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    值得推薦的好賣家
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">103306009</a>
+                                        </h4>
+                                            </div>
+                                            <div id="collapse9" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    值得推薦的好賣家
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">103306009</a>
+                                        </h4>
+                                            </div>
+                                            <div id="collapse10" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    值得推薦的好賣家
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/calender.js"></script>
+</body>
+
+</html>
