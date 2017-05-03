@@ -1,0 +1,451 @@
+<html>
+
+<head>
+    <title>SRD - 交易進程</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle pull-left collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="./index.html">
+                    <img src="../img/index/icon_long.svg" alt="icon" height="100%">
+                </a>
+                <ul class="nav navbar-right pull-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <img src="../img/index/hot.svg" alt="" width="30px;" style="border-radius:50%;cursor:pointer;">
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user dropdown-menu-right">
+                            <li><a href="./selfPage.html"><i class="fa fa-user fa-fw"></i>個人頁面</a>
+                            </li>
+                            <li><a href="./goodsNew.html"><i class="fa fa-cube fa-fw"></i>商品上架</a>
+                            </li>
+                            <li><a href="./wantedNew.html"><i class="fa fa-bullhorn fa-fw"></i>我要懸賞</a>
+                            </li>
+                            <li><a href="./commentYet.html"><i class="fa fa-file-text fa-fw"></i>尚未評論</a>
+                            </li>
+                            <li><a href="./setting.html"><i class="fa fa-gear fa-fw"></i>設定</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="#"><i class="fa fa-sign-out fa-fw"></i>登出</a>
+                            </li>
+                        </ul>
+                        <!-- /.dropdown-user -->
+                    </li>
+                    <!-- /.dropdown -->
+                </ul>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="sidebar-search">
+                        <div class="input-group custom-search-form">
+                            <input type="text" class="form-control" placeholder="Search...">
+                            <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                        </div>
+                        <!-- /input-group -->
+                    </li>
+                    <li><a href="./share.html">分享</a></li>
+                    <li><a href="./resale.html">轉售</a></li>
+                    <li><a href="./donate.html">捐贈</a></li>
+                    <li><a href="./wanted.html">懸賞</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+    <div class="tabs">
+        <ul class="nav">
+            <li class="active"><a href="#messenge" data-toggle="tab">訊息</a>
+            </li>
+            <li><a href="#commentyet" data-toggle="tab">尚未評論</a>
+            </li>
+            <li><a href="#commenting" data-toggle="tab">已評論紀錄</a>
+            </li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div class="tab-pane fade in active" id="messenge">
+                <div class="container">
+                    <div class="messenge">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="frame" onclick="location.href='./order.html'">
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <img src="../img/profile/bighero.png" alt="物品" class="img-responsive">
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <p class="name">BigHero6 Baymax</p>
+                                            <p class="id">103306000</p>
+                                            <p class="status">交易成功！</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="commentyet">
+                <div class="container">
+                    <br>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="panel-group" id="accordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                                Baymax(商品名稱)你是租出方
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse1" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <form role="form">
+                                                <h4>物品評價</h4>
+                                                <div class="form-group">
+                                                    <label>滿意度</label>
+                                                    <select class="form-control">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>評價描述</label>
+                                                    <textarea class="form-control" rows="3" placeholder="對商品的評價描述..."></textarea>
+                                                </div>
+                                                <hr>
+                                                <h4>對借入方評價</h4> 借入方：103306000
+                                                <div class="form-group">
+                                                    <label>滿意度</label>
+                                                    <select class="form-control">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>評價描述</label>
+                                                    <textarea class="form-control" rows="3" placeholder="對借入方的評價描述..."></textarea>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">送出</button>
+                                                <button type="reset" class="btn btn-default">重填</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                                Baymax(商品名稱)你是租出方
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse2" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <form role="form">
+                                                <h4>物品評價</h4>
+                                                <div class="form-group">
+                                                    <label>滿意度</label>
+                                                    <select class="form-control">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>評價描述</label>
+                                                    <textarea class="form-control" rows="3" placeholder="對商品的評價描述..."></textarea>
+                                                </div>
+                                                <hr>
+                                                <h4>借入方評價</h4> 借入方：103306000
+                                                <div class="form-group">
+                                                    <label>滿意度</label>
+                                                    <select class="form-control">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>評價描述</label>
+                                                    <textarea class="form-control" rows="3" placeholder="對借入方的評價描述..."></textarea>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">送出</button>
+                                                <button type="reset" class="btn btn-default">重填</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                            Baymax(商品名稱)你是租出方
+                                        </a>
+                                    </h4>
+                                    </div>
+                                    <div id="collapse3" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <form role="form">
+                                                <h4>物品評價</h4>
+                                                <div class="form-group">
+                                                    <label>滿意度</label>
+                                                    <select class="form-control">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>評價描述</label>
+                                                    <textarea class="form-control" rows="3" placeholder="對商品的評價描述..."></textarea>
+                                                </div>
+                                                <hr>
+                                                <h4>借入方評價</h4> 借入方：103306000
+                                                <div class="form-group">
+                                                    <label>滿意度</label>
+                                                    <select class="form-control">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>評價描述</label>
+                                                    <textarea class="form-control" rows="3" placeholder="對借入方的評價描述..."></textarea>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">送出</button>
+                                                <button type="reset" class="btn btn-default">重填</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                                            Baymax(商品名稱)你是租出方
+                                        </a>
+                                    </h4>
+                                    </div>
+                                    <div id="collapse4" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <form role="form">
+                                                <h4>物品評價</h4>
+                                                <div class="form-group">
+                                                    <label>滿意度</label>
+                                                    <select class="form-control">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>評價描述</label>
+                                                    <textarea class="form-control" rows="3" placeholder="對商品的評價描述..."></textarea>
+                                                </div>
+                                                <hr>
+                                                <h4>借入方評價</h4> 借入方：103306000
+                                                <div class="form-group">
+                                                    <label>滿意度</label>
+                                                    <select class="form-control">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>評價描述</label>
+                                                    <textarea class="form-control" rows="3" placeholder="對借入方的評價描述..."></textarea>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">送出</button>
+                                                <button type="reset" class="btn btn-default">重填</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+                                                Baymax(商品名稱)你是租出方
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse5" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <form role="form">
+                                                <h4>物品評價</h4>
+                                                <div class="form-group">
+                                                    <label>滿意度</label>
+                                                    <select class="form-control">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>評價描述</label>
+                                                    <textarea class="form-control" rows="3" placeholder="對商品的評價描述..."></textarea>
+                                                </div>
+                                                <hr>
+                                                <h4>借入方評價</h4> 借入方：103306000
+                                                <div class="form-group">
+                                                    <label>滿意度</label>
+                                                    <select class="form-control">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>評價描述</label>
+                                                    <textarea class="form-control" rows="3" placeholder="對借入方的評價描述..."></textarea>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">送出</button>
+                                                <button type="reset" class="btn btn-default">重填</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="commenting">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div id="rent">
+                                <h3>租出</h3>
+                                <div class="panel panel-green">
+                                    <div class="panel-heading">
+                                        物品
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="frame">
+                                            <div class="row">
+                                                <div class="col-xs-4">
+                                                    <img src="../img/item/camera.jpg" alt="物品" class="img-responsive">
+                                                </div>
+                                                <div class="col-xs-8">
+                                                    <p class="name">商品名稱：<span>Baymax</span></p>
+                                                    <p class="satisfaction">滿意度：<span>5</span></p>
+                                                    <p class="describe">使用狀況良好，沒有損壞!!</p>
+                                                    <p class="date">評價日期：<span>2017/04/01</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-yellow">
+                                    <div class="panel-heading">
+                                        借入方
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="frame">
+                                            <div class="row">
+                                                <div class="col-xs-4">
+                                                    <img src="../img/profile/bighero.png" alt="物品" class="img-responsive">
+                                                </div>
+                                                <div class="col-xs-8">
+                                                    <p class="name">交易對象：<span>103306000</span></p>
+                                                    <p class="satisfaction">滿意度：<span>5</span></p>
+                                                    <p class="describe">優良租出方，交易迅速</p>
+                                                    <p class="date">評價日期：<span>2017/04/01</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div id="borrow">
+                                <h3>借入</h3>
+                                <div class="panel panel-green">
+                                    <div class="panel-heading">
+                                        物品
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="frame">
+                                            <div class="row">
+                                                <div class="col-xs-4">
+                                                    <img src="../img/item/camera.jpg" alt="物品" class="img-responsive">
+                                                </div>
+                                                <div class="col-xs-8">
+                                                    <p class="name">商品名稱：<span>Baymax</span></p>
+                                                    <p class="satisfaction">滿意度：<span>5</span></p>
+                                                    <p class="describe">使用狀況良好，沒有損壞!!</p>
+                                                    <p class="date">評價日期：<span>2017/04/01</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-yellow">
+                                    <div class="panel-heading">
+                                        租出方
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="frame">
+                                            <div class="row">
+                                                <div class="col-xs-4">
+                                                    <img src="../img/profile/bighero.png" alt="物品" class="img-responsive">
+                                                </div>
+                                                <div class="col-xs-8">
+                                                    <p class="name">交易對象：<span>103306000</span></p>
+                                                    <p class="satisfaction">滿意度：<span>5</span></p>
+                                                    <p class="describe">優良租出方，交易迅速</p>
+                                                    <p class="date">評價日期：<span>2017/04/01</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
